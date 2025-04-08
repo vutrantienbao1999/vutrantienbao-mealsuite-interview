@@ -1,0 +1,62 @@
+.tickets {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 12px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--color-primary);
+
+      &__icon {
+        background-color: var(--color-primary);
+        color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .svg-icon {
+          width: 16px;
+          height: 16px;
+          stroke: currentColor;
+          stroke-width: 2;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+        
+          .path1 {
+            fill: none;
+          }
+        
+          .path2 {
+            fill: none;
+            stroke-dasharray: 4; // Ví dụ thêm hiệu ứng
+          }
+        
+          .circle {
+            fill: red;
+            stroke: black;
+          }
+        }
+      }
+    }
+
+  }
+
+}
